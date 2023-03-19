@@ -3,6 +3,7 @@ package com.itheima.test4;
 import java.util.concurrent.*;
 
 public class Main {
+//    多线程的另一种创建方式
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 3, 20, TimeUnit.SECONDS, new ArrayBlockingQueue<>(1), Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
         Future<Integer> future = threadPoolExecutor.submit(new Callable<Integer>() {
