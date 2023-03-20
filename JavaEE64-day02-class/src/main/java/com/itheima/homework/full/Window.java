@@ -7,7 +7,7 @@ public class Window {
     /**
      * 疫苗接种时间
      */
-    private static final int VACCINATION_TIME = 0;
+    private static final int VACCINATION_TIME = 2000;
     /**
      * 名字
      */
