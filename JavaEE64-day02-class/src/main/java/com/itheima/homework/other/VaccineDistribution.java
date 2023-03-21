@@ -18,6 +18,7 @@ public class VaccineDistribution {
         Window window2 = new Window("窗口2");
 
         // 创建生产者和消费者线程池
+
         ExecutorService producerPool = Executors.newFixedThreadPool(1);
         ExecutorService consumerPool = Executors.newFixedThreadPool(2);
 
@@ -25,9 +26,9 @@ public class VaccineDistribution {
         producerPool.execute(new VaccinationProducer(taskQueue, window1));
         producerPool.execute(new VaccinationProducer(taskQueue, window2));
 
-/*        // 启动消费者
+        // 启动消费者
         consumerPool.execute(new VaccinationConsumer(taskQueue, window1));
-        consumerPool.execute(new VaccinationConsumer(taskQueue, window2));*/
+        consumerPool.execute(new VaccinationConsumer(taskQueue, window2));
 
 
         // 关闭线程池
