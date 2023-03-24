@@ -17,7 +17,6 @@ public class MyTest {
 
     @Test
     public void testMethod1() {
-        int i = 1 / 0;
         System.out.println("testMethod1");
     }
 }

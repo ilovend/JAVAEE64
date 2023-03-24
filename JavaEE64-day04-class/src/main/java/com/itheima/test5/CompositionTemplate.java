@@ -11,4 +11,6 @@ public abstract class CompositionTemplate {
 
     protected abstract void body();
 
+    
+
 }
